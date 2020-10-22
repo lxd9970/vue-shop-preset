@@ -60,10 +60,11 @@
                     // console.log(valid);
                     if(!valid) return;
                    const result = await this.$http.post('login',this.loginForm)
-                   console.log(result.data);
+                   console.log(result);
                    if(result.data.meta.status !==200) return this.$message.error('用户名或密码错误');
                    this.$message.success('登陆成功');
-                   window.sessionStorage.setItem('token',result.data.token)
+                   window.sessionStorage.setItem('token',result.data.data.token)
+                   //将token保存到浏览器中
                    this.$router.push('/home')
                 });
             }
