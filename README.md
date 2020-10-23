@@ -1,5 +1,10 @@
 # vue_shop_preset
 
+##  marster登陆页面
+
+##  goods_params内容主体
+
+
 ## Project setup
 ```
 npm install
